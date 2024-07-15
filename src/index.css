@@ -1,7 +1,103 @@
-body {
-  background-color: #01ff80;
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
+.button {
+  position: relative;
+  display: flex;
+  padding: 13px 48px 15px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.66s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.button.button--compact {
+  padding: 10px 24px 12px 24px;
+}
+
+.button.button--pill {
+  border-radius: 64px;
+}
+
+.button.button--rounded {
+  border-radius: 8px;
+}
+
+.button.button--filled.button--default {
+  color: hsl(231, 11.1%, 37.1%);
+  background: hsl(225, 28.6%, 97.3%);
+  border: 1px solid hsl(0, 0%, 91.4%);
+}
+
+.button.button--filled.button--primary {
+  color: hsl(0, 0%, 100%);
+  background: hsl(123, 100%, 36.1%);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.button.button--filled.button--black {
+  background: hsl(231, 11.1%, 37.1%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button.button--filled.button--gray {
+  background: hsl(225, 28.6%, 97.3%);
+  color: hsl(227, 4%, 55.9%);
+}
+
+.button.button--filled.button--primary:hover {
+  background: hsl(123, 59.8%, 36.1%);
+}
+
+.button.button--outlined.button--default {
+  color: hsl(231, 11.1%, 37.1%);
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 91.4%);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.button.button--outlined.button--black {
+  color: hsl(231, 11.1%, 37.1%);
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 91.4%);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+button[disabled] {
+  background: hsl(0, 0%, 91.4%) !important;
+  color: hsl(227, 4%, 55.9%) !important;
+  cursor: not-allowed !important;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all 0.66s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Color styles */
+/* Text-size styles */
+/* Effect styles */
 img {
   pointer-events: none;
   user-select: none;
@@ -12,4 +108,11 @@ img {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.storybook_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 230px;
 }
